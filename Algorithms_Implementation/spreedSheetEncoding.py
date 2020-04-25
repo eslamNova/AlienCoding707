@@ -2,7 +2,7 @@ def spreedSheet_encode_column(str_col):
     num = 0 
     count = len(str_col) - 1 
     for char in str_col:
-        num += 26**count * (ord(char)-64)
+        num += 26**count * (ord(char)- ord("A") + 1 )
         count -=1
     return num
 
